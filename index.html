@@ -1,45 +1,225 @@
-╔══════════════════════════════╗
-🔥 GENPLAY SHOP 🔥
-⚡ CODE STORE ⚡
-╚══════════════════════════════╝
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-🖼️ LOGO: 🎮⚡ GP
+<title>GENPLAY SHOP - CODE STORE</title>
 
-━━━━━━━━━━━━━━━━━━━━━━
-💎 BẢNG GIÁ MÃ CODE
-━━━━━━━━━━━━━━━━━━━━━━
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-🟢 GenPlay
-• 1 ngày — 40.000đ
-• Ưu đãi: 30.000đ khi thanh toán bằng thẻ mệnh giá 10.000đ
+body{
+    font-family:Arial,sans-serif;
+    background:#050505;
+    color:#fff;
+}
 
-🔵 GenPlay
-• 7 ngày — 70.000đ
+header{
+    padding:20px;
+    text-align:center;
+    background:linear-gradient(135deg,#111,#1b0033);
+    border-bottom:1px solid #7b00ff;
+}
 
-🟣 GenPlay
-• 15 ngày — 100.000đ
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#b900ff;
+    text-shadow:0 0 15px #b900ff;
+}
 
-🔥 GenPlay VIP
-• 30 ngày — 150.000đ
+header p{
+    margin-top:8px;
+    color:#aaa;
+}
 
-👑 GÓI DÀI HẠN
-• 90 ngày — **350.000đ **
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:
+    radial-gradient(circle at center,#31005c 0,#050505 55%);
+}
 
-━━━━━━━━━━━━━━━━━━━━━━ 🎁 CHÍNH SÁCH ƯU ĐÃI
-━━━━━━━━━━━━━━━━━━━━━━
-• Mua 2 mã code → giảm 10%
-• Mua 5 mã code → giảm 20%
+.hero h1{
+    font-size:45px;
+    color:#fff;
+    text-shadow:0 0 20px #a000ff;
+}
 
-━━━━━━━━━━━━━━━━━━━━━━
-📱 THÔNG TIN LIÊN HỆ
-━━━━━━━━━━━━━━━━━━━━━━
-💬 Discord: discord.gg/yourserver
-📞 Zalo: 0792277949
+.hero h1 span{
+    color:#b900ff;
+}
 
-━━━━━━━━━━━━━━━━━━━━━━
-💳 THÔNG TIN THANH TOÁN
-━━━━━━━━━━━━━━━━━━━━━━
-⚠️ Vui lòng kiểm tra kỹ thông tin trước khi thực hiện giao dịch.
-📩 Sau khi hoàn tất chuyển khoản, vui lòng gửi biên lai cho cửa hàng để được hỗ trợ nhanh chóng.
+.hero p{
+    margin-top:15px;
+    color:#bbb;
+    font-size:17px;
+}
 
-  ⭐ **GENPLAY SHOP — UY TÍN • NHANH CHÓNG • CHUYÊN NGHIỆP** ⭐
+.btn{
+    display:inline-block;
+    margin:25px 8px 0;
+    padding:14px 25px;
+    border-radius:10px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+    background:#8b00ff;
+    box-shadow:0 0 18px #8b00ff;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+section{
+    padding:50px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.title{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:30px;
+    color:#c000ff;
+    text-shadow:0 0 12px #c000ff;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:linear-gradient(145deg,#111,#1b0924);
+    border:1px solid #6d00a8;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 0 15px #320044;
+}
+
+.card h3{
+    font-size:22px;
+    margin-bottom:12px;
+}
+
+.price{
+    font-size:28px;
+    font-weight:bold;
+    color:#d000ff;
+    margin:15px 0;
+    text-shadow:0 0 10px #d000ff;
+}
+
+.card p{
+    color:#aaa;
+    line-height:1.6;
+}
+
+.buy{
+    display:block;
+    margin-top:18px;
+    padding:12px;
+    background:#b000ff;
+    color:white;
+    text-decoration:none;
+    border-radius:9px;
+    font-weight:bold;
+}
+
+.vip{
+    border:1px solid #ff00d4;
+    box-shadow:0 0 25px #52004c;
+}
+
+.info{
+    background:#0d0d0d;
+    border-top:1px solid #222;
+    border-bottom:1px solid #222;
+}
+
+.contact{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.contact-box{
+    padding:25px;
+    background:#111;
+    border-radius:15px;
+    border:1px solid #333;
+}
+
+.contact-box h3{
+    color:#c000ff;
+    margin-bottom:15px;
+}
+
+footer{
+    text-align:center;
+    padding:30px 20px;
+    color:#777;
+    background:#020202;
+}
+
+@media(max-width:700px){
+    .hero h1{
+        font-size:34px;
+    }
+
+    .products{
+        grid-template-columns:1fr;
+    }
+
+    .contact{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:40px 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🔥 GENPLAY SHOP 🔥</div>
+    <p>⚡ CODE STORE ⚡</p>
+</header>
+
+<div class="hero">
+    <h1>GENPLAY <span>SHOP</span></h1>
+    <p>💎 Uy tín • Nhanh chóng • Chuyên nghiệp 💎</p>
+
+    <a class="btn" href="#banggia">💰 XEM BẢNG GIÁ</a>
+    <a class="btn" href="https://zalo.me/0792277949">💬 ZALO</a>
+</div>
+
+<section id="banggia">
+
+    <h2 class="title">💎 BẢNG GIÁ MÃ CODE</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <h3>🟢 GenPlay</h3>
+            <p>Thời hạn: 1 ngày</p>
+            <div class="price">40.000đ</div>
+            <p>🎁 Ưu đãi: 30.000đ khi thanh toán bằng thẻ mệnh giá 10.000đ</p>
+            <a class="buy" href="https://zalo.me/0792277949">MUA NGAY</a>
+        </div>
+
+        <div class="card">
+            <h3>🔵 GenPlay</h3>
+            <p>Th
